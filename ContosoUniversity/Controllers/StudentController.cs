@@ -18,12 +18,17 @@ namespace ContosoUniversity.Controllers
         // GET: Student
         //obtiene una lista de estudiantes del conjunto de entidades Students
         //mediante la lectura de la propiedad Students 
-        public ActionResult Index(string sortOrder)
+        public ViewResult Index(string sortOrder, string searchString)
         {
             ViewBag.NameSortParm = String.IsNullOrEmpty(sortOrder) ? "name_desc" : "";
             ViewBag.DateSortParm = sortOrder == "Date" ? "date_desc" : "Date";
             var students = from s in db.Students
                            select s;
+            if (!String.IsNullOrEmpty(searchString))
+            {
+                students = students.Where(s => s.LastName.Contains(searchString)
+                                       || s.FirstMidName.Contains(searchString));
+            }
             switch (sortOrder)
             {
                 case "name_desc":
@@ -132,8 +137,7 @@ namespace ContosoUniversity.Controllers
             return View(studentToUpdate);
         }
 
-        // POST: Student/Delete/5
-        [HttpPost, ActionName("Delete")]
+        [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult Delete(int id)
         {
@@ -150,7 +154,6 @@ namespace ContosoUniversity.Controllers
             }
             return RedirectToAction("Index");
         }
-
         protected override void Dispose(bool disposing)
         {
             if (disposing)
