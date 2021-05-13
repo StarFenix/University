@@ -81,3 +81,7 @@ C:\Users\SPARTAN PC\source\repos\ContosoUniversity\ContosoUniversity\bin\EntityF
 C:\Users\SPARTAN PC\source\repos\ContosoUniversity\ContosoUniversity\bin\EntityFramework.SqlServer.dll
 C:\Users\SPARTAN PC\source\repos\ContosoUniversity\ContosoUniversity\bin\EntityFramework.xml
 C:\Users\SPARTAN PC\source\repos\ContosoUniversity\ContosoUniversity\bin\EntityFramework.SqlServer.xml
+C:\Users\SPARTAN PC\source\repos\ContosoUniversity\ContosoUniversity\bin\PagedList.dll
+C:\Users\SPARTAN PC\source\repos\ContosoUniversity\ContosoUniversity\bin\PagedList.Mvc.dll
+C:\Users\SPARTAN PC\source\repos\ContosoUniversity\ContosoUniversity\bin\PagedList.xml
+C:\Users\SPARTAN PC\source\repos\ContosoUniversity\ContosoUniversity\bin\PagedList.Mvc.xml
