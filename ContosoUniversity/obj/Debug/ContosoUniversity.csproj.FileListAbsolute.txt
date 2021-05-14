@@ -85,3 +85,5 @@ C:\Users\SPARTAN PC\source\repos\ContosoUniversity\ContosoUniversity\bin\PagedLi
 C:\Users\SPARTAN PC\source\repos\ContosoUniversity\ContosoUniversity\bin\PagedList.Mvc.dll
 C:\Users\SPARTAN PC\source\repos\ContosoUniversity\ContosoUniversity\bin\PagedList.xml
 C:\Users\SPARTAN PC\source\repos\ContosoUniversity\ContosoUniversity\bin\PagedList.Mvc.xml
+C:\Users\SPARTAN PC\source\repos\ContosoUniversity\ContosoUniversity\obj\Debug\ContosoUniversity.Migrations.InitialCreate.resources
+C:\Users\SPARTAN PC\source\repos\ContosoUniversity\ContosoUniversity\obj\Debug\ContosoUniversity.csproj.GenerateResource.cache
