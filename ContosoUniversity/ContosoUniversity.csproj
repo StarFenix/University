@@ -135,10 +135,15 @@
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\StudentController.cs" />
     <Compile Include="Dal\SchollContext.cs" />
+    <Compile Include="Dal\SchoolConfiguration.CS" />
     <Compile Include="Dal\SchoolInitializer.cs" />
+    <Compile Include="Dal\SchoolInterceptorLogging.CS" />
+    <Compile Include="Dal\SchoolInterceptorTransientErrors.CS" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Logging\ILogger.CS" />
+    <Compile Include="Logging\Logger.cs" />
     <Compile Include="Models\Course.cs" />
     <Compile Include="Models\Enrollment.cs" />
     <Compile Include="Models\Student.CS" />
