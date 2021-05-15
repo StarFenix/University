@@ -87,3 +87,5 @@ C:\Users\SPARTAN PC\source\repos\ContosoUniversity\ContosoUniversity\bin\PagedLi
 C:\Users\SPARTAN PC\source\repos\ContosoUniversity\ContosoUniversity\bin\PagedList.Mvc.xml
 C:\Users\SPARTAN PC\source\repos\ContosoUniversity\ContosoUniversity\obj\Debug\ContosoUniversity.Migrations.InitialCreate.resources
 C:\Users\SPARTAN PC\source\repos\ContosoUniversity\ContosoUniversity\obj\Debug\ContosoUniversity.csproj.GenerateResource.cache
+C:\Users\SPARTAN PC\source\repos\ContosoUniversity\ContosoUniversity\obj\Debug\ContosoUniversity.Migrations.MaxLengthOnNames.resources
+C:\Users\SPARTAN PC\source\repos\ContosoUniversity\ContosoUniversity\obj\Debug\ContosoUniversity.Migrations.ColumnFirstName.resources
