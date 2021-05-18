@@ -1,4 +1,6 @@
-﻿namespace ContosoUniversity.Models
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace ContosoUniversity.Models
 {
     public enum Grade
     {
@@ -12,7 +14,8 @@
         public int StudentID { get; set; }
         //La propiedad Grade es una enumeración.
         //El signo de interrogación después de la declaración de tipo Grade
-        //indica que la propiedad Gradeacepta valores NULL.
+        //indica que la propiedad Grade acepta valores NULL.
+        [DisplayFormat(NullDisplayText = "No grade")]
         public Grade? Grade { get; set; }
 
         public virtual Course Course { get; set; }

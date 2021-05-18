@@ -9,6 +9,7 @@ using System.Web.Mvc;
 using ContosoUniversity.DAL;
 using ContosoUniversity.Models;
 using PagedList;
+using System.Data.Entity.Infrastructure;
 
 namespace ContosoUniversity.Controllers
 {
@@ -152,6 +153,26 @@ namespace ContosoUniversity.Controllers
             return View(studentToUpdate);
         }
 
+        // GET: Student/Delete/5
+        public ActionResult Delete(int? id, bool? saveChangesError = false)
+        {
+            if (id == null)
+            {
+                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
+            }
+            if (saveChangesError.GetValueOrDefault())
+            {
+                ViewBag.ErrorMessage = "Delete failed. Try again, and if the problem persists see your system administrator.";
+            }
+            Student student = db.Students.Find(id);
+            if (student == null)
+            {
+                return HttpNotFound();
+            }
+            return View(student);
+        }
+
+        // POST: Student/Delete/5
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult Delete(int id)
@@ -162,7 +183,7 @@ namespace ContosoUniversity.Controllers
                 db.Students.Remove(student);
                 db.SaveChanges();
             }
-            catch (DataException/* dex */)
+            catch (RetryLimitExceededException/* dex */)
             {
                 //Log the error (uncomment dex variable name and add a line here to write a log.
                 return RedirectToAction("Delete", new { id = id, saveChangesError = true });
