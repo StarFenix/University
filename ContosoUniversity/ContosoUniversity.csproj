@@ -170,6 +170,7 @@
     <Compile Include="Models\OfficeAssignment.cs" />
     <Compile Include="Models\Student.CS" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ViewModels\AssignedCourseData.CS" />
     <Compile Include="ViewModels\EnrollmentDateGroup.CS" />
     <Compile Include="ViewModels\InstructorIndexData.CS" />
   </ItemGroup>
