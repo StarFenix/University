@@ -137,7 +137,7 @@
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\InstructorController.cs" />
     <Compile Include="Controllers\StudentController.cs" />
-    <Compile Include="Dal\SchollContext.cs" />
+    <Compile Include="Dal\SchoolContext.cs" />
     <Compile Include="Dal\SchoolConfiguration.CS" />
     <Compile Include="Dal\SchoolInitializer.cs" />
     <Compile Include="Dal\SchoolInterceptorLogging.CS" />
@@ -162,6 +162,10 @@
     <Compile Include="Migrations\202105150111244_ComplexDataModel.cs" />
     <Compile Include="Migrations\202105150111244_ComplexDataModel.Designer.cs">
       <DependentUpon>202105150111244_ComplexDataModel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202106020022072_DepartmentSP.cs" />
+    <Compile Include="Migrations\202106020022072_DepartmentSP.Designer.cs">
+      <DependentUpon>202106020022072_DepartmentSP.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Course.cs" />
@@ -261,6 +265,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202105150111244_ComplexDataModel.resx">
       <DependentUpon>202105150111244_ComplexDataModel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202106020022072_DepartmentSP.resx">
+      <DependentUpon>202106020022072_DepartmentSP.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

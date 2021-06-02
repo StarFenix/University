@@ -90,3 +90,4 @@ C:\Users\SPARTAN PC\source\repos\ContosoUniversity\ContosoUniversity\obj\Debug\C
 C:\Users\SPARTAN PC\source\repos\ContosoUniversity\ContosoUniversity\obj\Debug\ContosoUniversity.Migrations.MaxLengthOnNames.resources
 C:\Users\SPARTAN PC\source\repos\ContosoUniversity\ContosoUniversity\obj\Debug\ContosoUniversity.Migrations.ColumnFirstName.resources
 C:\Users\SPARTAN PC\source\repos\ContosoUniversity\ContosoUniversity\obj\Debug\ContosoUniversity.Migrations.ComplexDataModel.resources
+C:\Users\SPARTAN PC\source\repos\ContosoUniversity\ContosoUniversity\obj\Debug\ContosoUniversity.Migrations.DepartmentSP.resources
