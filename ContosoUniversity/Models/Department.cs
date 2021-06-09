@@ -17,12 +17,14 @@ namespace ContosoUniversity.Models
         public decimal Budget { get; set; }
 
         [DataType(DataType.Date)]
-        [DisplayFormat(DataFormatString = "{0:dd-MM-yyyy}", ApplyFormatInEditMode = true)]
+        [DisplayFormat(DataFormatString = "{0:yyyy-MM-dd}", ApplyFormatInEditMode = true)]
         [Display(Name = "Start Date")]
         public DateTime StartDate { get; set; }
 
         public int? InstructorID { get; set; }
-
+        // El valor rowversion es un número secuencial que se incrementa cada vez que se actualiza la fila. 
+        [Timestamp]
+        public byte[] RowVersion { get; set; }
         public virtual Instructor Administrator { get; set; }
         public virtual ICollection<Course> Courses { get; set; }
     }
