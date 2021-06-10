@@ -3,7 +3,8 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@ViewBag.Title - Contoso University</title>
+    <title>@ViewBag.Title - University</title>
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" type="text/css" />
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
 </head>
@@ -34,7 +35,7 @@
         @RenderBody()
         <hr />
         <footer>
-            <p>&copy; @DateTime.Now.Year - Contoso University</p>
+            <p>&copy; @DateTime.Now.Year - University</p>
         </footer>
     </div>
 
